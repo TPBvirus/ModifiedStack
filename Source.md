@@ -3,21 +3,22 @@
 
 package datastructures_lab.pkg6;
 import java.util.Stack;
-/**
- *
- * @author Thomas
- * Class substitute for Java Stack Class. Generic Implementation.
- */
+
+/* Class substitute for Java Stack Class. Generic Implementation.*/
+
 public class ModifiedStack<T> implements StackInterface<T> {
     public Stack<T> currentStack;
     public int numberOfEntries;
+    
     public ModifiedStack(){//makes a new stack
         Stack<T> newStack = new Stack<>();
         currentStack = newStack;
     }
+    
     public int getNumberOfEntries(){
         return numberOfEntries;
     }
+    
     //overrides for stackInterface
     @Override
     public void push(T DataHere){
@@ -36,6 +37,7 @@ public class ModifiedStack<T> implements StackInterface<T> {
     public boolean isEmpty(){
         return numberOfEntries == 0;
     }
+    
     /** Displays the content of the stack selected without altering stack contents*/
     public void displayContent(){
         @SuppressWarnings("Unchecked")//suppress warning for the array
@@ -53,7 +55,8 @@ public class ModifiedStack<T> implements StackInterface<T> {
             i--;
         }
     }
-    /** checkReverse() Compares the passed stack to the current stack reversed to see if they are equal.
+    
+    /* checkReverse() Compares the passed stack to the current stack reversed to see if they are equal.
      * @param comparedStack
      * @return Boolean
         */
@@ -78,7 +81,8 @@ public class ModifiedStack<T> implements StackInterface<T> {
         }
         return result;
     }
-    /** @return T[]
+    
+    /* @return T[]
         Converts values of the current stack into array without the order of the objects
         in the stack being changed.*/
     public T[] toArray(){
