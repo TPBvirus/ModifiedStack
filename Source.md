@@ -6,7 +6,7 @@ import java.util.Stack;
 
 //Class substitute for Java Stack Class. Generic Implementation.
 
-public class ModifiedStack<T> implements StackInterface<T> {
+public class ModifiedStack<T> implements StackInterface<T>{
     public Stack<T> currentStack;
     public int numberOfEntries;
     
@@ -38,7 +38,7 @@ public class ModifiedStack<T> implements StackInterface<T> {
         return numberOfEntries == 0;
     }
     
-    /** Displays the content of the stack selected without altering stack contents*/
+    // Displays the content of the stack selected without altering stack contents
     public void displayContent(){
         @SuppressWarnings("Unchecked")//suppress warning for the array
         T[] saveArray = (T[])new Object[numberOfEntries];//create new array of objects
