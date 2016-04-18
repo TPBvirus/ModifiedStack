@@ -8,7 +8,7 @@ package datastructures_lab.pkg6;
 
 import java.util.Stack;
 
-
+```
 
 public class ModifiedStack<T> implements StackInterface <T>{
 
@@ -120,3 +120,4 @@ public class ModifiedStack<T> implements StackInterface <T>{
     
 }
 //end ModifiedStack Class
+```
