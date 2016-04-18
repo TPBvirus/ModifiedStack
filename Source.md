@@ -1,10 +1,9 @@
 # ModifiedStack
 //Language: Java
+//Class substitute for Java Stack Class. Generic Implementation.
 
 package datastructures_lab.pkg6;
 import java.util.Stack;
-
-//Class substitute for Java Stack Class. Generic Implementation.
 
 public class ModifiedStack<T> implements StackInterface<T>{
     public Stack<T> currentStack;
