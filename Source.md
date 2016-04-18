@@ -1,6 +1,6 @@
 ### ModifiedStack
 Language: Java
-lass substitute for Java Stack Class. Generic Implementation.
+Substitute for Java Stack Class using generics.
 
 
 ```
